@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Assignment</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px auto; max-width: 650px; line-height: 1.6; }
+    h1 { text-align: center; color: #333; }
+    .box { background: #f9f9f9; border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; border-radius: 6px; }
+    h3 { margin-top: 0; color: #0066cc; }
+    pre { background: #222; color: #4ade80; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    p { margin-bottom: 0; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Assignment</h1>
+
+  <!-- 1 -->
+  <div class="box">
+    <h3>1. Loop to print numbers from 1 to 10</h3>
+    <pre><code>for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}</code></pre>
+    <p>Output: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="box">
+    <h3>2. Sum of array of numbers</h3>
+    <pre><code>function sumArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+console.log(sumArray([10, 20, 30]));</code></pre>
+    <p>Output: 60</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="box">
+    <h3>3. Largest number in an array</h3>
+    <pre><code>function findLargest(arr) {
+  return Math.max(...arr);
+}
+console.log(findLargest([12, 45, 89, 23]));</code></pre>
+    <p>Output: 89</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="box">
+    <h3>4. Check even or odd</h3>
+    <pre><code>function checkEvenOdd(num) {
+  return num % 2 === 0 ? "Even" : "Odd";
+}
+console.log(checkEvenOdd(7));</code></pre>
+    <p>Output: "Odd"</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="box">
+    <h3>5. Reverse a string</h3>
+    <pre><code>function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("hello"));</code></pre>
+    <p>Output: "olleh"</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="box">
+    <h3>6. Merge two arrays using spread operator</h3>
+    <pre><code>const a = [1, 2];
+const b = [3, 4];
+const result = [...a, ...b];
+console.log(result);</code></pre>
+    <p>Output: [1, 2, 3, 4]</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="box">
+    <h3>7. ES6 filter even numbers</h3>
+    <pre><code>const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers);</code></pre>
+    <p>Output: [2, 4, 6]</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="box">
+    <h3>8. Template literals</h3>
+    <pre><code>const name = "Alice";
+const msg = `Hello ${name}, welcome!`;
+console.log(msg);</code></pre>
+    <p>Output: "Hello Alice, welcome!"</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="box">
+    <h3>9. Arrow function</h3>
+    <pre><code>const greet = (name) => "Hello, " + name;
+console.log(greet("Alice"));</code></pre>
+    <p>Output: "Hello, Alice"</p>
+  </div>
+
+</body>
+</html>
